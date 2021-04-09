@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(148, 235, 167);
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('./home.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    color: black;
+}
+#colour0{
+    color: black;
+}
+
+#blog{
+    color: black;
+    
+}
+#softwares{
+    color: black;
+}
+#home{
+    color: black;
+    margin-bottom: -2em;
+}
+#contact{
+    color: black;
+}
+#contactin{
+    margin-top: -5em;
+    margin-bottom: -3em;
+}
+#colour5{
+    color: black;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background:none; /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: larger;
+}
+
+#myBtn:hover {
+    background-color: rgb(118, 239, 255);
+  }
+
+.navtxt{
+    margin-right: 2em;
+    font-size:larger;
+}
+
+.navtxt:hover{
+    color: rgb(241, 0, 0);
+}
+
+.name{
+    color: black;
+}
+.email{
+    color: black;
+}
+.message{
+    color: black;
+}
+#name{
+    border: 1px solid black;
+    transition: all ease-in-out 0.2s;
+}
+
+#name:focus{
+    border: 2px solid rgb(0, 19, 190);
+
+}
+#name:hover{
+    border: 2px solid rgb(26, 49, 255);
+
+}
+#email{
+    transition: all ease-in-out 0.2s;
+    border: 1px solid black;
+}
+#email:hover{
+    border: 2px solid rgb(26, 49, 255);
+
+}
+#email:focus{
+    border: 2px solid rgb(0, 19, 190);
+}
+
+#message{
+    transition: all ease-in-out 0.2s;
+    border: 1px solid black;
+}
+#message:hover{
+    border: 2px solid rgb(26, 49, 255);
+
+}
+#message:focus{
+    border: 2px solid rgb(0, 19, 190);
+    
+}
+
+#mydiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(241, 0, 0);
+    
+}
+
+.txt-rotate {
+    height: 2em;
+    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: -2em;
+}
+
+.paraimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    width: 20em;
+    height: 22em;
+    border-radius: 15px;
+}
+
+
+
+
+#cursor {
+    cursor: auto;
+}
+
+#youtube {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.link {
+    color: rgb(238, 0, 0);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(10, 0, 150);
+    text-decoration: underline;
+}
+.leading-relaxed text-base{
+    color: black;
+}
+
+#pythontut {
+    display: block;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contact {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkx {
+    display: flex;
+    color: rgb(65, 0, 243);
+    text-decoration: none;
+    width: auto;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.linkx:hover {
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+
+#thankmsg{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@media only screen and (max-width: 460px) {
+    .navtxt{
+        margin-right: 25px;
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .navtxt{
+        margin-right: 18px;
+        font-size:medium;
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .txt-rotate {
+        height: 30px;
+        font-size: 25px;
+    }
+    
+}
+
+
+

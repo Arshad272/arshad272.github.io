@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Assistant</title>
+    <link rel="shortcut icon" href="./perfect3.ico" type="image/x-ico">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gotu|Merriweather&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f84cbf777e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            background-image: url('root.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
+        }
+        
+        .class1 {
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+            justify-content: center;
+            text-shadow: 3px 1px 5px rgb(30, 154, 211);
+        }
+        
+        .class2 {
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+        }
+        
+        .button {
+            font-size: larger;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 125px;
+            height: 35px;
+            border: 1px solid gold;
+            border-radius: 7px;
+            background-color: rgb(13, 89, 253);
+            color: whitesmoke;
+            margin: 10px auto;
+            outline: none;
+        }
+        
+        #cursor {
+            cursor: auto;
+        }
+        
+        .img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px auto;
+            width: 60px;
+            height: 55px;
+        }
+        
+        .button:hover {
+            background-color: rgb(103, 232, 255);
+            color: black;
+            cursor: pointer;
+        }
+        
+        h1,
+        hr,
+        h3 {
+            text-align: center;
+        }
+        
+        .paras {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            color: white;
+        }
+        
+        .para {
+            display: block;
+            color: white;
+            width: 40em;
+            padding: 0px 20px;
+        }
+        
+        .btn {
+            width: 30em;
+            height: 50px;
+            background-color: rgb(170, 245, 255);
+            color: black;
+            outline: none;
+            border: 3px solid rgb(96, 39, 255);
+            border-radius: 10px;
+            font-size: larger;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .butns {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        .btn:hover {
+            background-color: rgb(16, 0, 87);
+            color: white;
+        }
+        
+        #extract {
+            display: block;
+            float: right;
+            margin: 1px 1px;
+            height: 10em;
+            transition: all 0.7s ease-in-out;
+        }
+        
+        #extract:hover {
+            height: 25em;
+        }
+        
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 25px;
+            background-color: rgb(6, 4, 88);
+            color: white;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .butns {
+                width: auto;
+                height: auto;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 820px) {
+            .whatcan {
+                display: none;
+            }
+            .finale {
+                display: none;
+            }
+            #arrow {
+                display: none;
+            }
+            #extract {
+                display: none;
+            }
+        }
+        
+        span {
+            color: white;
+            font-size: large;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #arrow {
+            width: 120px;
+            height: 20px;
+            border: 1px solid gold;
+        }
+        
+        .whatcan li a {
+            text-decoration: none;
+            color: rgb(82, 206, 255);
+        }
+        
+        .whatcan li a:hover {
+            color: rgb(160, 255, 82);
+        }
+        
+        .whatcan li {
+            list-style: none;
+            color: white;
+        }
+        
+        .whatcan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="butns">
+            <button onclick="window.location.href='https://arshad272.github.io/home.html#softwares'" class="btn"> Go Back To Softwares</button>
+        </div>
+
+    </header>
+
+    <div class="class1">
+        <h1>Hello There.<br>Download and use Virtual Desktop Assistant software for free</h1>
+
+
+    </div>
+    <div class="class2">
+        <img class="img" src="perfect.png" alt="Desktop Assistant" width="150px">
+        <span>For 32 Bit : </span>
+        <button class="button" onclick="myFunction()">Download</button>
+        <span>For 64 Bit : </span>
+        <button class="button" onclick="myFunction2()">Download</button>
+    </div>
+    <div class="paras">
+        <div class="para">
+            <p>The software will be available inside zip file<br>
+                <div class="finale">Extract all dependencies from zip folder to use virtual desktop assistant like this&nbsp;: &nbsp;&nbsp;&nbsp;&nbsp;<img src="./arrow.png" alt="arrow" id="arrow"><br><br></div>This Software is designed only for Windows.
+                <br>This is an Executable(.exe) file.
+            </p>
+
+        </div>
+        <div>
+            <img id="extract" src="soft.png" alt="Extract">
+
+        </div>
+    </div>
+    <div class="whatcan">
+        <ul>
+            <li>
+                &#8594;&nbsp;&nbsp;&nbsp;<a href="whatcan.html" target="__blank">How this Virtual Assistant can help you?</a>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        Thank You For Visiting
+    </footer>
+
+   
+
+    <script>
+        function myFunction() {
+            location.href = "https://github.com/Arshad272/Desktop-Assistant-32Bit/archive/master.zip";
+        }
+    </script>
+
+    <script>
+        function myFunction2() {
+            location.href = "https://github.com/Arshad272/Desktop-Assistant-64Bit/archive/master.zip";
+        }
+    </script>
+
+
+</body>
+
+</html>
