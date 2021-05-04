@@ -89,9 +89,19 @@
     <hr>
     <h2 style="text-align: center; margin:10px">Students can download all files related to FLAT subject from here</h2>
 
-    <div>
-        <iframe src="https://drive.google.com/embeddedfolderview?id=186oJ8xxZdqPZM1E1MUmq9PZgfI-SULzs#list"
-            style="width:100%; height:500px; border:0;"></iframe>
+    <div class="files" id="lst-vw" style="display: none;">
+        <button type="button" onclick="lst_func()" style="margin: 10px;float:right;" class="btn btn-outline-dark">List View</button>
+        <div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=186oJ8xxZdqPZM1E1MUmq9PZgfI-SULzs#grid"
+                style="width:100%; height:500px; border:0;"></iframe>
+        </div>
+    </div>
+    <div class="files" id="grid-vw">
+        <button type="button" onclick="grd_func()"  style="margin: 10px;float:right;" class="btn btn-outline-dark">Grid View</button>
+        <div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=186oJ8xxZdqPZM1E1MUmq9PZgfI-SULzs#list"
+                style="width:100%; height:600px; border:0;"></iframe>
+        </div>
     </div>
 
 
@@ -102,6 +112,14 @@
 
 
     <script>
+        function lst_func(){
+            document.getElementById('lst-vw').style.display = "none"
+            document.getElementById('grid-vw').style.display = "block"
+        }
+        function grd_func(){
+            document.getElementById('grid-vw').style.display = "none"
+            document.getElementById('lst-vw').style.display = "block"
+        }
         function pass_auth() {
             document.getElementById("password").style.display = "block"
         }
