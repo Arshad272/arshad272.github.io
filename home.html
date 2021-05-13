@@ -216,7 +216,7 @@
                     Softwares And Youtube Channel. Please Enter Valid Information So That I Can Contact You Through Your
                     E-Mail.</p>
             </div>
-            <form method="POST" name="google-sheet">
+            <form method="POST" onsubmit="return disable_func()" name="google-sheet">
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
@@ -237,13 +237,13 @@
                             <div class="relative">
                                 <label class="message" for="message"
                                     class="leading-7 text-sm text-gray-600">Message</label>
-                                <textarea id="message" name="Message"
+                                <textarea required id="message" name="Message"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                             </div>
                         </div>
                         <div class="p-2 w-full">
                             <button required type="submit" value="submit"
-                                onclick="document.getElementById('mydiv').innerHTML = '<h3>Wait...</h3>'" name="submit"
+                                id="submit-btn" name="submit"
                                 ;
                                 class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                             <p id="mydiv" class="leading-relaxed mb-8"></p>
@@ -301,11 +301,17 @@
                 .then(response => document.getElementById('mydiv').innerHTML = '<h3>Success!!! I Will Contact You Within A Short Time, Through Your Mail ! </h3>')
                 .catch(error => alert("Something Went Wrong. Please Try Again."))
         })
-
-
     </script>
 
     <script>
+        function disable_func(){
+            if (document.forms["google-sheet"]["Name"].value != '' && document.forms["google-sheet"]["E-Mail"].value != '' && document.forms["google-sheet"]["Message"].value != ''){
+                document.getElementById('mydiv').innerHTML = '<h3>Wait !!!';
+                document.getElementById('submit-btn').disabled=true;
+                document.getElementById('submit-btn').style.background='rgb(109, 107, 108)';
+                return true;
+            }
+        }
         mybutton = document.getElementById("myBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
