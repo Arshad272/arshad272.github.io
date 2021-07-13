@@ -89,23 +89,20 @@
     </div>
     <hr>
     <h2 style="text-align: center; margin:10px">Students can download all files related to FLAT subject from here</h2>
-
-    <div class="files" id="lst-vw" style="display: none;">
-        <button type="button" onclick="lst_func()" style="margin: 10px;float:right;" class="btn btn-outline-dark">List View</button>
+	<div class="files">
         <div>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=186oJ8xxZdqPZM1E1MUmq9PZgfI-SULzs#grid"
-                style="width:100%; height:90em; border:0;"></iframe>
+		<h3 style="text-align: center; margin:10px">Question Bank Answers (Unit Wise)</h3>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1-ha7lk3cIkgQEwnxHK-JezMsdjgrfdnH#list"
+                style="width:100%; height:20em; border:0;"></iframe>
         </div>
     </div>
-    <div class="files" id="grid-vw">
-        <button type="button" onclick="grd_func()"  style="margin: 10px;float:right;" class="btn btn-outline-dark">Grid View</button>
+	<hr>
+    <div class="files">
         <div>
             <iframe src="https://drive.google.com/embeddedfolderview?id=186oJ8xxZdqPZM1E1MUmq9PZgfI-SULzs#list"
-                style="width:100%; height:90em; border:0;"></iframe>
+                style="width:100%; height:85em; border:0;"></iframe>
         </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
@@ -113,14 +110,6 @@
 
 
     <script>
-        function lst_func(){
-            document.getElementById('lst-vw').style.display = "none"
-            document.getElementById('grid-vw').style.display = "block"
-        }
-        function grd_func(){
-            document.getElementById('grid-vw').style.display = "none"
-            document.getElementById('lst-vw').style.display = "block"
-        }
         function pass_auth() {
             document.getElementById("password").style.display = "block"
         }
