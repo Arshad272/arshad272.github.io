@@ -194,15 +194,35 @@ body {
 
 .linkx {
     display: flex;
-    color: rgb(65, 0, 243);
+    color: rgb(78, 78, 78);
     text-decoration: none;
     width: auto;
     margin: 10px;
     transition: all 0.3s ease-in-out;
 }
 
-.linkx:hover {
-    color: rgb(255, 0, 0);
+#lnk-1:hover {
+    color: rgb(193, 0, 0);
+    font-size: 20px;
+}
+#lnk-2:hover {
+    color: rgb(0, 19, 142);
+    font-size: 20px;
+}
+#lnk-3:hover {
+    color: rgb(26, 105, 0);
+    font-size: 20px;
+}
+#lnk-4:hover {
+    color: rgb(255, 38, 0);
+    font-size: 20px;
+}
+#lnk-5:hover {
+    color: rgb(21, 0, 255);
+    font-size: 20px;
+}
+#lnk-6:hover {
+    color: rgb(11, 0, 135);
     font-size: 20px;
 }
 
