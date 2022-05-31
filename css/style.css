@@ -260,6 +260,10 @@ body {
     align-items: center;
 }
 
+.index-page-main-width {
+    width: 80%;
+}
+
 @media only screen and (max-width: 460px) {
     .navtxt {
         margin-right: 25px;
@@ -287,5 +291,15 @@ body {
     }
     .width-decider {
         width: 100%;
+    }
+    .index-page-main-width {
+        width: 100%;
+    }
+    .hide-in-small {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .flex-direction-changer {
+        flex-direction: column;
     }
 }
