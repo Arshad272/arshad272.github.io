@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="ROBOTS" content="Index, FOLLOW">
     <title>About Arshad</title>
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/f84cbf777e.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
@@ -20,14 +20,13 @@
     <header id="colour0" class="text-gray-600 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                    src="./icon.ico">
+                <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="Images/icon.ico">
                 <span class="ml-3 text-xl">Arshad</span>
             </a>
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                 <a href="#home" class="navtxt">Home</a>
                 <a href="#blog" class="navtxt">Blogs</a>
-                <a href="#Acheivements" class="navtxt">Acheivements</a>
+                <a href="#skills" class="navtxt">Skills</a>
                 <a href="#contact" class="navtxt">Contact</a>
             </nav>
 
@@ -36,45 +35,119 @@
     <hr>
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <h1 align="center">
-        <div class="txt-rotate" data-period="1000"
-            data-rotate='[ "Hello There","Iam Arshad", "Welcome to my Blog", "Check Out Softwares !!!","Contact In Case Of Any Issue!"]'>
+        <div class="txt-rotate" data-period="1000" data-rotate='[ "Hello There","Iam Arshad", "Welcome to my Blog", "Check Out Softwares !!!","Contact In Case Of Any Issue!"]'>
         </div>
     </h1>
 
-    <section id="home" class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <section style="display: flex;justify-content: center;align-items: center;flex-direction: row;width: 100%;" id="home" class="text-gray-600 body-font">
+        <div style="width: 80%;" class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img class="object-cover object-center rounded" id="img" alt="hero" src="./Arshad.jpeg">
+                <img class="object-cover object-center rounded" id="img" alt="hero" src="Images/Arshad.jpeg">
             </div>
-            <div
-                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center margin-decider">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                     Arshad.K
                 </h1>
-                <p class="mb-8 leading-relaxed">Hey Guys. Iam a computer science engineer who is interested at designing new softwares and developing new computer based technologies. <br> 
-                    My duty is working with computer programmers and information technology professionals to solve technological problems.<br></p>
+                <p style="text-align: justify;width:95%;" class="mb-8 leading-relaxed width-decider"> &emsp;&emsp; Hey Guys. Iam a computer science engineer who is interested at designing new softwares and developing new computer based technologies. I am a patient learner and have decent grasping power. I can learn things quickly and can
+                    be productive at the same time. My duty is working with computer programmers and information technology professionals to solve technological problems.<br></p>
 
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font mb-10">
+        <div class="container px-5  mx-auto">
+            <!-- <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+            </div> -->
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="Images/logos/certifications.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">My Certifications</h2>
+                            <p class="mb-4 text-gray-800">Click on below link to have a look at my certifications as a CSE Student.</p>
+                            <span class="inline-flex">
+                                <a class="text-indigo-500 inline-flex items-center link" href="sub-pages/certifications.html" >View Certifications
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="Images/logos/softwares.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">My Softwares</h2>
+                            <p class="mb-4 text-gray-800">Click on below link to have a look at Softwares designed by me as a CSE Student.</p>
+                            <span class="inline-flex">
+                                <a class="text-indigo-500 inline-flex items-center link" href="sub-pages/softwares.html" >View Softwares
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="Images/logos/youtube.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">My YouTube Channel</h2>
+                            <p class="mb-4 text-gray-800">Click on below link to learn Programming from my YouTube Channel.</p>
+                            <span class="inline-flex">
+                                <a class="text-indigo-500 inline-flex items-center link" href="sub-pages/youtube.html" >Visit YouTube
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="Images/logos/projects.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">My Projects</h2>
+                            <p class="mb-4 text-gray-800">Click on below link to have a look at My Projects which I've done in my B.Tech.</p>
+                            <span class="inline-flex">
+                                <a class="text-indigo-500 inline-flex items-center link" href="sub-pages/projects.html" >View Projects
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <hr>
 
     <section id="blog" class="text-gray-600 body-font">
-        <h1 style="text-align: center;margin-top:80px; margin-bottom:-40px;"
-            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">CHECK OUT MY RECENT BLOGS...</h1>
+        <h1 style="text-align: center;margin-top:80px; margin-bottom:-40px;" class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">CHECK OUT MY RECENT BLOGS...</h1>
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 lg:w-1/3">
-                    <div
-                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Free website hosting
                         </h1>
-                        <p style="text-align: justify;" class="leading-relaxed mb-3">Learn how to host a website for free in Github pages. Github is
-                            a provider of internet hosting for software development and version control using git and
-                            github desktop.</p>
-                        <a class="text-indigo-500 inline-flex items-center link"
-                            href="https://programmingwitharshad.blogspot.com/2021/04/how-to-host-website-in-github.html"
-                            target="_blank">Learn More
+                        <p style="text-align: justify;" class="leading-relaxed mb-3">Learn how to host a website for free in Github pages. Github is a provider of internet hosting for software development and version control using git and github desktop.</p>
+                        <a class="text-indigo-500 inline-flex items-center link" href="https://programmingwitharshad.blogspot.com/2021/04/how-to-host-website-in-github.html" target="_blank">Learn More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
@@ -84,14 +157,10 @@
                     </div>
                 </div>
                 <div class="p-4 lg:w-1/3">
-                    <div
-                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Java in VS Code</h1>
-                        <p style="text-align: justify;" class="leading-relaxed mb-3">Learn how to code Java in Visual Studio Code. Have a look at
-                            installation steps of Java Development Kit(JDK) and Visual Studio Code in your machine.</p>
-                        <a class="text-indigo-500 inline-flex items-center link"
-                            href="https://programmingwitharshad.blogspot.com/2021/04/java-in-vscode.html"
-                            target="_blank">Learn More
+                        <p style="text-align: justify;" class="leading-relaxed mb-3">Learn how to code Java in Visual Studio Code. Have a look at installation steps of Java Development Kit(JDK) and Visual Studio Code in your machine.</p>
+                        <a class="text-indigo-500 inline-flex items-center link" href="https://programmingwitharshad.blogspot.com/2021/04/java-in-vscode.html" target="_blank">Learn More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
@@ -101,15 +170,11 @@
                     </div>
                 </div>
                 <div class="p-4 lg:w-1/3">
-                    <div
-                        class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+                    <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
                         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Web Development</h1>
-                        <p style="text-align: justify;" class="leading-relaxed mb-3">Have a look at programming languages required for web
-                            development. Learn these programming languages before getting started with web development.
+                        <p style="text-align: justify;" class="leading-relaxed mb-3">Have a look at programming languages required for web development. Learn these programming languages before getting started with web development.
                         </p>
-                        <a class="text-indigo-500 inline-flex items-center link"
-                            href="https://programmingwitharshad.blogspot.com/2021/04/languages-for-web-development.html"
-                            target="_blank">Learn More
+                        <a class="text-indigo-500 inline-flex items-center link" href="https://programmingwitharshad.blogspot.com/2021/04/languages-for-web-development.html" target="_blank">Learn More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14"></path>
@@ -125,209 +190,142 @@
     <section style="margin-top: -150px;" class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-                <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Visit my official blogger
-                    page for more technical information and for more amazing Blogs.</h1>
-                <button onclick=" window.open('https://programmingwitharshad.blogspot.com/','_blank')"
-                    class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Visit</button>
+                <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Visit my official blogger page for more technical information and for more amazing Blogs.</h1>
+                <button onclick=" window.open('https://programmingwitharshad.blogspot.com/','_blank')" class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0">Visit</button>
             </div>
         </div>
     </section>
 
-    <section class="text-gray-900 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <h1 style="margin-top: -140px;"
-                class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">INTERESTED AT
-                PROGRAMMING !!!
-                <br class="hidden sm:block">CHECK OUT MY YOUTUBE CHANNEL...
-            </h1>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-                <div class="p-4 md:w-1/3 flex">
 
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Programming With Arshad</h2>
-                        <p class="leading-relaxed text-base">If You Are Interested In Programming And Technology Then
-                            Visit My Youtube Channel Programming With Arshad.<br> Like, Share And Subscribe <i
-                                class="fas fa-arrow-right"></i> <a
-                                href="https://www.youtube.com/channel/UCXMUhvPGTLcz57VGQosqPCA/featured?view_as=subscriber"
-                                class="link" target="__blank">Programming With Arshad</a></p>
 
+    <hr>
+    <div style="margin-top: 25px;" id="skills">
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-18 mx-auto">
+                <div class="flex flex-col">
+                    <h1 style="color: black;text-align: center;margin: 20px;font-size: xx-large;">SOFTWARE SKILLS</h1>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/pycharm.png">
                         </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">PyCharm</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Python Tutorials</h2>
-                        <p class="leading-relaxed text-base">If you want to learn Python Programming From Basics For
-                            Free. Then Visit This Video Series <i class="fas fa-arrow-right"></i> <a
-                                href="https://www.youtube.com/playlist?list=PLgk6c6lxl8t96Hizh636ZEnrK6QjhndZn"
-                                target="__blank" class="link">Python Tutorials With Arshad</a></p>
-
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/vscode.png">
                         </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">VS Code</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Advanced Python Tutorials</h2>
-                        <p class="leading-relaxed text-base">Are you good at Python Programming. Want to learn how to
-                            create amazing A.I using Python Programming. Then Visit <i class="fas fa-arrow-right"></i>
-                            <a href="https://www.youtube.com/playlist?list=PLgk6c6lxl8t-3NdsOmdaUiTy2d7Z_webp"
-                                class="link">Advanced Python Tutorials</a>
-                        </p>
-
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/intellij.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">IntelliJ Idea</h3>
+                        </div>
                     </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/android.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">Android Studio</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/obs.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">OBS Studio</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/vmware.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">VM Ware Workstation</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/xampp.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">Xampp</h3>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="Images/skills/msoffice.png">
+                        </a>
+                        <div class="mt-4">
+                            <h3 style="color: black;text-align: center;font-size: x-large;" class="text-gray-500 text-xs tracking-widest title-font mb-1">MS Office</h3>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-        </div>
-    </section>
-    <hr>
-    <br>
+        </section>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-10 mx-auto">
+                <div class="flex flex-col">
+                    <h1 style="color: black;text-align: center;margin: 20px;font-size: xx-large;">GENERAL SKILLS</h1>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="Images/skills/communication.png" alt="content">
+                            <h3 style="text-align: center;color: white;font-size: large;" class="tracking-widest text-indigo-500 text-xs font-medium title-font">COMMUNICATION <br>SKILL
+                            </h3>
 
-    <h1 style="margin:30px 0px;font-weight:bold;text-align:center;" id="Acheivements"
-        class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">WEBSITES DESIGNED BY ME</h1>
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-5 mx-auto">
-            <div style="text-align: justify;color:black;" class="flex flex-wrap -m-4">
-                <div class="p-4 md:w-1/3">
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="sietk.png" alt="blog">
-                        <div style="text-align: center;display:flex;justify-content:center;align-items:center;flex-direction:column;"
-                            class="p-6">
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="Images/skills/Teamwork-removebg-preview.png" alt="content">
+                            <h3 style="text-align: center;color: white;font-size: large;" class="tracking-widest text-indigo-500 text-xs font-medium title-font">TEAM
+                                <BR /> WORK
+                            </h3>
 
-                            <h1 class="title-font text-lg sm:text-3xl text-2xl mb-3 color-dark"
-                                style="text-align: center;">SIETK</h1>
-                            <p style="text-align: justify;" class="leading-relaxed mb-3">Designed website for Siddharth Institute of Engineering &
-                                Technology (SIETK). Click on the below link and have a look at new UI of SIETK college
-                                website</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a style="width:100%;text-align:center;" href="http://www.sietk.org"
-                                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 link">Visit Website
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="Images/skills/Problem_Solving.png" alt="content">
+                            <h3 style="text-align: center;color: white;font-size: large;" class="tracking-widest text-indigo-500 text-xs font-medium title-font">PROBLEM <br/> SOLVING
+                            </h3>
 
-                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/4 md:w-1/2 p-4">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <img class="h-40 rounded w-full object-cover object-center mb-6" src="Images/skills/Hour_Glass.png" alt="content">
+                            <h3 style="text-align: center;color: white;font-size: large;" class="tracking-widest text-indigo-500 text-xs font-medium title-font">WORK UNDER PRESSURE
+                            </h3>
+
                         </div>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/3">
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="sistk.png" alt="blog">
-                        <div style="text-align: center;display:flex;justify-content:center;align-items:center;flex-direction:column;"
-                            class="p-6">
-
-                            <h1 class="title-font text-lg sm:text-3xl text-2xl mb-3 color-dark"
-                                style="text-align: center;">SISTK</h1>
-                            <p style="text-align: justify;" class="leading-relaxed mb-3">Designed website for Siddartha Institute of Science &
-                                Technology (SISTK). Click on the below link and have a look at new UI of SISTK college
-                                website</p>
-                            <div class="flex items-center flex-wrap">
-                                <a style="width:100%;text-align:center;" href="http://www.sistk.org"
-                                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 link">Visit Website
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/3">
-                    <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                        <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="smdr.png" alt="blog">
-                        <div style="text-align: center;display:flex;justify-content:center;align-items:center;flex-direction:column;"
-                            class="p-6">
-
-                            <h1 class="title-font text-lg sm:text-3xl text-2xl mb-3 color-dark"
-                                style="text-align: center;">S.M.D.Rayyan</h1>
-                            <p style="text-align: justify;" class="leading-relaxed mb-3">Designed website for Shaik Mohammed Rayyan who is an Urban
-                                Planner by qualification from Vijayawada, Andhra Pradesh. Have a look at his website.</p>
-                            <div class="flex items-center flex-wrap ">
-                                <a style="width:100%;text-align:center;" href="https://shaikmohammedrayyan.github.io/"
-                                    class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 link">Visit Website
-                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M5 12h14"></path>
-                                        <path d="M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section> <br>
+
+    </div>
     <hr>
-
-    <section class="text-gray-900 body-font">
-        <div class="container px-5 py-10 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">CHECK OUT MY SOFTWARES
-                </h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">All Of These Softwares Are Developed Using Python
-                    Programming Language.</p>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Desktop Assistant</h2>
-                    <p class="leading-relaxed text-base mb-4">This Is A Virtual Desktop Assistant For Windows Works
-                        Similar Cortana.Click On Learn More To Know The Features.</p>
-                    <a href="./softwar1.html" class="link" class="text-indigo-500 inline-flex items-center">Learn More
-                        &nbsp&nbsp<i class="fas fa-arrow-right"></i>
-
-                    </a>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Speech To Text Converter.
-                    </h2>
-                    <p class="leading-relaxed text-base mb-4">This Is A Speech Recognition Software. Used For Converting
-                        Speech Into Text.Click On Learn More To Know The Features.</p>
-                    <a href="./softwar2.html" class="link" class="text-indigo-500 inline-flex items-center">Learn More
-                        &nbsp&nbsp<i class="fas fa-arrow-right"></i>
-
-                    </a>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Cleaner</h2>
-                    <p class="leading-relaxed text-base mb-4">This Software Will Arrange All Docs, Songs, Photos etc
-                        Present In A Folder. Click On Learn More To Know The Features.</p>
-                    <a href="./softwar3.html" class="link" class="text-indigo-500 inline-flex items-center"
-                        class="link">Learn More &nbsp&nbsp <i class="fas fa-arrow-right"></i>
-
-                    </a>
-                </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Password Generator</h2>
-                    <p class="leading-relaxed text-base mb-4">Keep Your Passwords Strong And Secure To Avoid Cyber
-                        Attacks. Click On Learn More To Know The Features.</p>
-                    <a href="./softwar4.html" class="link" class="text-indigo-500 inline-flex items-center"
-                        class="link">Learn More &nbsp&nbsp<i class="fas fa-arrow-right"></i>
-
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <hr>
-
     <section id="contact" class="text-gray-600 body-font relative">
         <div id="contactin" class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
                 <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">CONTACT ME</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You Can Send A Message Regarding Any Queries About
-                    Softwares And Youtube Channel. Please Enter Valid Information So That I Can Contact You Through Your
-                    E-Mail.</p>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You Can Send A Message Regarding Any Queries About Softwares And Youtube Channel. Please Enter Valid Information So That I Can Contact You Through Your E-Mail.
+                </p>
             </div>
             <form method="POST" onsubmit="return disable_func()" name="google-sheet">
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
@@ -335,28 +333,23 @@
                         <div class="p-2 w-1/2">
                             <div class="relative">
                                 <label class="name" for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                                <input required type="text" id="name" name="Name"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <input required type="text" id="name" name="Name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
                             <div class="relative">
                                 <label class="email" for="email" class="leading-7 text-sm text-gray-600">E-mail</label>
-                                <input required type="email" id="email" name="E-Mail"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <input required type="email" id="email" name="E-Mail" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
                         </div>
                         <div class="p-2 w-full">
                             <div class="relative">
-                                <label class="message" for="message"
-                                    class="leading-7 text-sm text-gray-600">Message</label>
-                                <textarea required id="message" name="Message"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                <label class="message" for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                <textarea required id="message" name="Message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                             </div>
                         </div>
                         <div class="p-2 w-full">
-                            <button required type="submit" value="submit" id="submit-btn" name="submit" ;
-                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                            <button required type="submit" value="submit" id="submit-btn" name="submit" ; class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                             <p id="mydiv" class="leading-relaxed mb-8"></p>
                         </div>
                     </div>
@@ -378,8 +371,7 @@
                 class="fab fa-facebook-square"></i></a>
         <a href="https://chat.whatsapp.com/BptwWNWZ0RUGmP648n2dE7" class="linkx" id="lnk-3" target="__blank"><i
                 class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/invites/contact/?i=4zje1m4p9tqo&utm_content=2jq1bw0" class="linkx" id="lnk-4"
-            target="__blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?i=4zje1m4p9tqo&utm_content=2jq1bw0" class="linkx" id="lnk-4" target="__blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/Arshad84950201?s=08" class="linkx" id="lnk-5" target="__blank"><i
                 class="fab fa-twitter"></i></a>
         <a href="http://www.linkedin.com/in/arshad-k-788855185" class="linkx" id="lnk-6" target="__blank"><i
@@ -393,8 +385,7 @@
 
                 <span class="ml-3 text-xl">&nbsp;Thank You For Visiting.</span>
             </a>
-            <p id="colour5"
-                class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+            <p id="colour5" class="text-sm text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-500 sm:py-2 sm:mt-0 mt-4">
                 Enjoy Learning...
 
             </p>
@@ -408,7 +399,10 @@
 
         form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
                 .then(response => document.getElementById('mydiv').innerHTML = '<h3>Success!!! I Will Contact You Within A Short Time, Through Your Mail ! </h3>')
                 .catch(error => alert("Something Went Wrong. Please Try Again."))
         })
@@ -426,7 +420,9 @@
         mybutton = document.getElementById("myBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
         function scrollFunction() {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -441,6 +437,7 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
         function myFunction() {
             var x = document.getElementById("myLinks");
             if (x.style.display === "block") {
@@ -449,7 +446,7 @@
                 x.style.display = "block";
             }
         }
-        var TxtRotate = function (el, toRotate, period) {
+        var TxtRotate = function(el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
             this.loopNum = 0;
@@ -459,7 +456,7 @@
             this.isDeleting = false;
         };
 
-        TxtRotate.prototype.tick = function () {
+        TxtRotate.prototype.tick = function() {
             var i = this.loopNum % this.toRotate.length;
             var fullTxt = this.toRotate[i];
 
@@ -487,12 +484,12 @@
                 delta = 500;
             }
 
-            setTimeout(function () {
+            setTimeout(function() {
                 that.tick();
             }, delta);
         };
 
-        window.onload = function () {
+        window.onload = function() {
             var elements = document.getElementsByClassName('txt-rotate');
             for (var i = 0; i < elements.length; i++) {
                 var toRotate = elements[i].getAttribute('data-rotate');

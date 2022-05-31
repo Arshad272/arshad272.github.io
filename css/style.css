@@ -7,125 +7,148 @@ html {
 }
 
 body {
-    background-color: rgb(148, 235, 167);
     font-family: 'Ubuntu', sans-serif;
-    background-image: url('./home.jpg');
+    background-image: url("../Images/home.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
     color: black;
     text-align: justify;
 }
-#colour0{
+
+.margin-decider {
+    margin-left: -90px;
+}
+
+#colour0 {
     color: black;
 }
 
-#blog{
-    color: black;
-    
-}
-#softwares{
+#blog {
     color: black;
 }
-#home{
+
+#softwares {
+    color: black;
+}
+
+#home {
     color: black;
     margin-bottom: -2em;
 }
-#contact{
+
+#contact {
     color: black;
 }
-#contactin{
+
+#contactin {
     margin-top: -5em;
     margin-bottom: -3em;
 }
-#colour5{
+
+#colour5 {
     color: black;
 }
+
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background:none; /* Set a background color */
-    color: rgb(0, 0, 0); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background: none;
+    /* Set a background color */
+    color: rgb(0, 0, 0);
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
     font-size: larger;
 }
 
 #myBtn:hover {
     background-color: rgb(118, 239, 255);
-  }
-
-.navtxt{
-    margin-right: 2em;
-    font-size:larger;
 }
 
-.navtxt:hover{
+.navtxt {
+    margin-right: 2em;
+    font-size: larger;
+}
+
+.navtxt:hover {
     color: rgb(241, 0, 0);
 }
 
-.name{
+.name {
     color: black;
 }
-.email{
+
+.email {
     color: black;
 }
-.message{
+
+.message {
     color: black;
 }
-#name{
+
+#name {
     border: 1px solid black;
     transition: all ease-in-out 0.2s;
 }
 
-#name:focus{
+#name:focus {
     border: 2px solid rgb(0, 19, 190);
-
 }
-#name:hover{
+
+#name:hover {
     border: 2px solid rgb(26, 49, 255);
-
 }
-#email{
+
+#email {
     transition: all ease-in-out 0.2s;
     border: 1px solid black;
 }
-#email:hover{
-    border: 2px solid rgb(26, 49, 255);
 
+#email:hover {
+    border: 2px solid rgb(26, 49, 255);
 }
-#email:focus{
+
+#email:focus {
     border: 2px solid rgb(0, 19, 190);
 }
 
-#message{
+#message {
     transition: all ease-in-out 0.2s;
     border: 1px solid black;
 }
-#message:hover{
+
+#message:hover {
     border: 2px solid rgb(26, 49, 255);
-
 }
-#message:focus{
+
+#message:focus {
     border: 2px solid rgb(0, 19, 190);
-    
 }
 
-#mydiv{
+#mydiv {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: rgb(241, 0, 0);
-    
 }
 
 .txt-rotate {
@@ -146,9 +169,6 @@ body {
     height: 22em;
     border-radius: 15px;
 }
-
-
-
 
 #cursor {
     cursor: auto;
@@ -172,7 +192,8 @@ body {
     color: rgb(10, 0, 150);
     text-decoration: underline;
 }
-.leading-relaxed text-base{
+
+.leading-relaxed text-base {
     color: black;
 }
 
@@ -205,60 +226,66 @@ body {
     color: rgb(193, 0, 0);
     font-size: 20px;
 }
+
 #lnk-2:hover {
     color: rgb(0, 19, 142);
     font-size: 20px;
 }
+
 #lnk-3:hover {
     color: rgb(26, 105, 0);
     font-size: 20px;
 }
+
 #lnk-4:hover {
     color: rgb(255, 38, 0);
     font-size: 20px;
 }
+
 #lnk-5:hover {
     color: rgb(21, 0, 255);
     font-size: 20px;
 }
+
 #lnk-6:hover {
     color: rgb(11, 0, 135);
     font-size: 20px;
 }
 
-
-#thankmsg{
+#thankmsg {
     display: flex;
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
 
-
 @media only screen and (max-width: 460px) {
-    .navtxt{
+    .navtxt {
         margin-right: 25px;
         font-size: large;
     }
 }
+
 @media only screen and (max-width: 380px) {
-    .navtxt{
+    .navtxt {
         margin-right: 18px;
-        font-size:medium;
+        font-size: medium;
     }
-
 }
-
 
 @media only screen and (max-width: 1000px) {
     .txt-rotate {
         height: 30px;
         font-size: 25px;
     }
-    
 }
 
-
-
+@media only screen and (max-width: 800px) {
+    .margin-decider {
+        margin-left: 0px;
+    }
+    .width-decider {
+        width: 100%;
+    }
+}
