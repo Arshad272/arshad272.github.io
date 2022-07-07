@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+        }
+        
+        .confirm-box {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            top: 25%;
+            left: 25%;
+            text-align: center;
+            background: white;
+        }
+        
+        .close {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay" id="overlay" hidden>
+        <div class="confirm-box">
+            <h2>Confirmation</h2>
+            <p>Speak truth, You are an ass-hole !</p>
+            <button onclick="isConfirm(true)">Yes, I am</button>
+            <button onclick="isConfirm(false)">Nope</button>
+        </div>
+        <h1 id="fuck"></h1>
+    </div>
+    <script>
+        showConfirmBox()
+
+        function showConfirmBox() {
+            document.getElementById("overlay").hidden = false;
+        }
+
+        function closeConfirmBox() {
+            document.getElementById("overlay").hidden = true;
+            document.getElementById("fuck").innerHTML = " FUCK YOU !!";
+        }
+
+        function isConfirm(x) {
+            while (true) {
+                if (x) {
+                    alert("Fine, Fuck off now");
+                    break;
+                } else {
+                    location.reload();
+                    break;
+                }
+            }
+            closeConfirmBox();
+        }
+    </script>
+</body>
+
+</html>
