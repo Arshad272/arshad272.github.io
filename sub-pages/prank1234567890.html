@@ -19,12 +19,14 @@
         
         .confirm-box {
             position: absolute;
-            width: 50%;
-            height: 50%;
-            top: 25%;
-            left: 25%;
+            width: 90%;
+            height: 90%;
             text-align: center;
             background: white;
+			right: 5%;
+			left:5%;
+			top:5%;
+			bottom:5%;
         }
         
         .close {
@@ -37,9 +39,9 @@
     <div class="overlay" id="overlay" hidden>
         <div class="confirm-box">
             <h2>Confirmation</h2>
-            <p>Speak truth, You are an ass-hole !</p>
-            <button onclick="isConfirm(true)">Yes, I am</button>
-            <button onclick="isConfirm(false)">Nope</button>
+            <p style="font-size: xx-large;">Speak truth, You are an ass-hole !</p>
+            <button style="font-size: x-large;" onclick="isConfirm(true)">Yes, I am</button> &nbsp; &nbsp;
+            <button style="font-size: x-large;" onclick="isConfirm(false)">Nope</button>
         </div>
         <h1 id="fuck"></h1>
     </div>
