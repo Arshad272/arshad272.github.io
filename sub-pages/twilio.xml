@@ -1,4 +1,0 @@
-<Response>
-<Say voice="alice">Hey Arshad! Your program has just found your expected result. Check once now.</Say>
-<Play>http://arshad272.github.io/sub-pages/Believer.mp3</Play>
-</Response>
