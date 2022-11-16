@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: url("../Images/home.jpg");
+    background-image: linear-gradient(to right, rgb(242, 255, 239), rgb(255, 255, 232), rgb(240, 253, 255), rgb(244, 244, 255));
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
