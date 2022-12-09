@@ -8,7 +8,7 @@ html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-image: linear-gradient(to right, rgb(242, 255, 239), rgb(255, 255, 232), rgb(240, 253, 255), rgb(244, 244, 255));
+    background-image: linear-gradient(to right, rgb(242, 255, 239), rgb(255, 255, 255), rgb(240, 253, 255), rgb(255, 255, 255));
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,7 +89,7 @@ body {
 }
 
 .navtxt:hover {
-    color: rgb(241, 0, 0);
+    color: rgb(163, 246, 255);
 }
 
 .name {
@@ -302,4 +302,47 @@ body {
     .flex-direction-changer {
         flex-direction: column;
     }
+}
+
+.padding-setter {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#whats-chat {
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    height: auto;
+    width: auto;
+    background: #1bff91;
+    padding: 12.5px;
+    border-radius: 50px;
+    z-index: 9999;
+}
+
+#whats-chat:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgb(0, 235, 106);
+    bottom: 11%;
+}
+
+@media only screen and (max-width: 700px) {
+    .padding-setter {
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
