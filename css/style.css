@@ -346,3 +346,12 @@ img {
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+
+.my-skills {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/skills_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: fit-content
+}
