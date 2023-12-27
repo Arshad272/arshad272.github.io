@@ -153,7 +153,11 @@
             </div>
         </div>
     </div>
-    <!-- ====== Forms Section End -->
+    <video class="hidden" id="myVideo" width="640" height="360" controls>
+        <!-- Provide the path to your video file -->
+        <source src="thala.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
 
     <!-- Section: Design Block -->
     <section class="mb-40 hidden" id="thala">
@@ -204,6 +208,8 @@
                 ourText += text[text.length-1] + ' = 7';
                 document.getElementById('word').innerText = ourText;
                 document.getElementById('alert').className = "hidden";
+                let video = document.getElementById("myVideo");
+                video.play();
             }
             else {
                 document.getElementById('alert').className = "bg-red-200";
