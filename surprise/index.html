@@ -19,13 +19,25 @@
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script>
+        // Check if the page has already been reloaded
+        if (!localStorage.getItem('reloaded')) {
+            // Set a flag in localStorage to indicate the page has been reloaded
+            localStorage.setItem('reloaded', 'true');
+            
+            // Force reload when the page starts
+            window.onload = function() {
+                location.reload(true);
+            };
+        }
+    </script>
 
 </head>
 
 <body>
     <!-- ====== Forms Section Start -->
 
-    <section class="bg-gray-1 dark:bg-dark py-20 lg:py-[120px]">
+    <section id="inp" class="bg-gray-1 dark:bg-dark py-20 lg:py-[120px]">
         <div class="container mx-auto">
             <div class="flex flex-wrap -mx-4">
                 <div class="w-full px-4">
@@ -178,11 +190,11 @@
                         <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
                             THALA <br /><span>for a Reason</span>
                         </h1>
-                        <a target="_blank" href="https://youtu.be/3xoD73JEeDY?feature=shared"
+                        <btton onclick="location.reload();"
                             class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
                             data-te-ripple-init data-te-ripple-color="light">
-                            Get started
-                        </a>
+                            Try Again
+                    </button>
                     </div>
                 </div>
             </div>
@@ -200,6 +212,7 @@
                 num += parseInt(text[i]);
             }
             if (text.length == 7 || num == 7) {
+                document.getElementById('inp').className = "hidden";
                 document.getElementById('thala').className = "mb-40";
                 document.getElementById('thala').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 let ourText = "";
