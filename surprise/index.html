@@ -194,13 +194,14 @@
     <script>
         function magic() {
             let text = document.getElementById("data").value;
+            text = text.replace(/\s/g, '');
             let num = 0;
             for (let i = 0; i < text.length; i++) {
                 num += parseInt(text[i]);
             }
             if (text.length == 7 || num == 7) {
                 document.getElementById('thala').className = "mb-40";
-                document.getElementById('word').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                document.getElementById('thala').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 let ourText = "";
                 for (let i = 0 ; i < text.length-1 ; i++) {
                     ourText += text[i] + '+' ;
