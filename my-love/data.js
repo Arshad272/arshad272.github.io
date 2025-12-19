@@ -1,0 +1,94 @@
+const galleryImages = [
+    {
+        "src": "assets/images/7M409417.JPG",
+        "original": "7M409417.JPG"
+    },
+    {
+        "src": "assets/images/7M409425.JPG",
+        "original": "7M409425.JPG"
+    },
+    {
+        "src": "assets/images/7M409455.JPG",
+        "original": "7M409455.JPG"
+    },
+    {
+        "src": "assets/images/IMG20250921174006.jpg",
+        "original": "IMG20250921174006.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922071958.jpg",
+        "original": "IMG20250922071958.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922072710.jpg",
+        "original": "IMG20250922072710.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922072759.jpg",
+        "original": "IMG20250922072759.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922073330.jpg",
+        "original": "IMG20250922073330.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922073924.jpg",
+        "original": "IMG20250922073924.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922074207.jpg",
+        "original": "IMG20250922074207.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922075205.jpg",
+        "original": "IMG20250922075205.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922144653.jpg",
+        "original": "IMG20250922144653.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922145048.jpg",
+        "original": "IMG20250922145048.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922163701.jpg",
+        "original": "IMG20250922163701.jpg"
+    },
+    {
+        "src": "assets/images/IMG20250922171039.jpg",
+        "original": "IMG20250922171039.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109122242.jpg",
+        "original": "IMG20251109122242.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109134134.jpg",
+        "original": "IMG20251109134134.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109155510.jpg",
+        "original": "IMG20251109155510.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109155641.jpg",
+        "original": "IMG20251109155641.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109160220.jpg",
+        "original": "IMG20251109160220.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109161013.jpg",
+        "original": "IMG20251109161013.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251109163551.jpg",
+        "original": "IMG20251109163551.jpg"
+    },
+    {
+        "src": "assets/images/IMG20251110110824.jpg",
+        "original": "IMG20251110110824.jpg"
+    }
+];
